@@ -175,7 +175,7 @@ Raspberry Pi 4</h3>
 <center><img src="pps-jitter-distrib-RPi4.png" alt="" class="inline" title="Raspberry Pi 4 Jitter Distribution"/>    </center><p>Figure 2b is PPS jitter that was captured from the test unit over 24 hours to the file <b>/var/local/pps-jitter-distrib</b> by setting <code>jitter-distrib=enable</code> in <b>/etc/pps-client.conf</b> and is typical data that is easily generated on any RPi 4.</p>
 <p>Of the three components of Type 2 noise, it is sometimes possible to see the Type 2a noise separately from the others in a plot of interrupt delay <em>d<sub>int</sub></em> as in Figure 2c (from RPi4#7 below). Unfortunately, there is a still a small amount of jitter in the direction of earlier time introduced by the measurement which makes it impossible to tell whether the bin at 4.5 microseconds is mostly noise or a part of the Type 2a distribution. But ignoring that, this is a good illustration of Type 2a noise.</p>
 <p>Because this interrupt is generated entirely within Raspberry Pi 4, it is unaffected by the <em>timeline</em> because the measurement is made internal to the processor where time appears to be linear. Any time measurement made totally within the processor is blind to the <em>timeline</em> variations of its own clock oscillator because time is being measured relative to a time reference warped by that same <em>timeline</em>.</p>
-<center><img src="interrupt-delay.png" alt="" class="inline" title="Interrupt Delay"/></center><p>The interrupt delay distribution was generated with a utility designed to measure delays. The delay noise is almost entirely Type 2a noise with a standard deviation of 0.45 microsecond on this processor. The significance of interrupt delay is that it is always added to any interrupt measurement made on a GPIO pin. The maximum value for this distribution is 4.95 microseconds. This value must subtracted from the recorded clock time to get a true time for the interrupt on the local clock.</p>
+<center><img src="interrupt-delay.png" alt="" class="inline" title="Interrupt Delay"/>    </center><p>The interrupt delay distribution was generated with a utility designed to measure delays. The delay noise is almost entirely Type 2a noise with a standard deviation of 1 microsecond on this processor. The significance of interrupt delay is that it is always added to any interrupt measurement made on a GPIO pin. The maximum value for this distribution is 4.5 microseconds. This value must subtracted from the recorded clock time to get a true time for the interrupt on the local clock.</p>
 <h3><a class="anchor" id="latency-spikes"></a>
 Latency Spikes</h3>
 <p>A typical latency spike is evident in the PPS-Client status printout shown below which shows low jitter values except for the latency spike in the middle line of the image.</p>
@@ -391,11 +391,11 @@ The normal-params Utility</h3>
 <p>The program uses a Monte Carlo simulation to fit an ideal <a href="https://en.wikipedia.org/wiki/Normal_distribution">normal distribution</a> to three binned sample values from the distribution. If the sample distribution departs from normal, there will be a conformance error listed as relative fit which is a measure of the reliability of the calculated values of both ideal mean and ideal SD. Roughly speaking, relative fit is the probability that the samples are actually drawn from a normal distribution.</p>
 <p>Bins are centered on the sample x-coordinate values entered to the program. For example the bin at 800000 in the example below extends from 799999.5 to 800000.5.</p>
 <p>The program can be used to determine mean and SD for any of the sample distributions collected in testing PPS-Client including positive-only distributions which fit a <a href="https://en.wikipedia.org/wiki/Half-normal_distribution">half-normal distribution</a> in the direction of increasing delay or forward time.</p>
-<p>If the distribution is half-normal then enter only completely filled bins in the direction away from the maximum and <b>use double the number of actual samples</b> to make normal-params treat the bins as those from the right side of a normal distribution. For example, the interrupt delay distribution in <a href="#raspberry-pi-4">Figure 2c</a> was evaluated for mean and standard deviation by providing the sample numbers for the sample bins from 5.5 forward like this (only 86,400 actual samples were actually collected), </p><pre class="fragment">$ normal-params 5.5 36885 6.0 6241 6.5 290 172800
+<p>If the distribution is half-normal then enter only completely filled bins in the direction away from the maximum and <b>use double the number of actual samples</b> to make normal-params treat the bins as those from the right side of a normal distribution. For example, the interrupt delay distribution in <a href="#raspberry-pi-4">Figure 2c</a> was evaluated for mean and standard deviation by providing the sample numbers for the sample bins from 5 forward like this (only 43,200 actual samples were actually collected), </p><pre class="fragment">$ normal-params 5 29247 6 11742 7 1846 86400
 Relative to the best fit normal distribution:
-maximum:  800004.946649
-stddev: 0.452998
-Relative fit of samples: 0.999829
+maximum:  4.493750
+stddev: 1.007466
+Relative fit of samples: 0.999728
 </pre><p>Bear in mind that it's only a half-normal distribution if nearly all of the samples are in one direction or the other from the maximum.</p>
 <p>For a distribution expected to be nearly <a href="https://en.wikipedia.org/wiki/Normal_distribution">normally distributed</a> the points would usually be selected around the center of the distribution like this: </p><pre class="fragment">$ normal-params 799999 10212 800000 17382 800001 10275 43200
 Relative to the best fit normal distribution:
@@ -520,7 +520,7 @@ Test Notes</h2>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Nov 25 2020 10:42:05 for PPS-Client by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Nov 25 2020 14:04:12 for PPS-Client by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.18
 </small></address>
