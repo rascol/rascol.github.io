@@ -1,0 +1,20 @@
+var searchData=
+[
+  ['raw_5ferror_5fdecay_227',['RAW_ERROR_DECAY',['../d4/d6a/pps-client_8h.html#ac9c3f27094347ffa09eeb295b335d95f',1,'pps-client.h']]],
+  ['raw_5ferror_5fzero_228',['RAW_ERROR_ZERO',['../d4/d6a/pps-client_8h.html#a6a1c27e0e0aee3b4aa8e7cbaa8a11e42',1,'pps-client.h']]],
+  ['rawerr_229',['rawErr',['../d5/d60/pps-client_8cpp.html#afbc77fa2372eda9338310a39a40e5a98',1,'pps-client.cpp']]],
+  ['rawerror_230',['rawError',['../dc/d1d/struct_g.html#a16c87490f35e9ce8bd42bd0a77bb6c5d',1,'G']]],
+  ['rawerrordistrib_231',['rawErrorDistrib',['../dc/d1d/struct_g.html#a36936cf43112f4ae3cb2ac96dd9c6d73',1,'G']]],
+  ['read_5flogerr_232',['read_logerr',['../d0/d3e/pps-files_8cpp.html#a459e7950f1def63780ba7fda8e3c12d2',1,'pps-files.cpp']]],
+  ['read_5fsave_233',['read_save',['../df/d28/pps-serial_8cpp.html#a98c41bc5e42885fab2e7f99876865476',1,'pps-serial.cpp']]],
+  ['readconfigfile_234',['readConfigFile',['../d0/d3e/pps-files_8cpp.html#ab54f3174d0d64527d7cf57100ce6ef2e',1,'pps-files.cpp']]],
+  ['readpps_5fsettime_235',['readPPS_SetTime',['../d5/d60/pps-client_8cpp.html#a0010a2340006cbbcd5a4588b587a59c7',1,'pps-client.cpp']]],
+  ['readppstimestamp_236',['readPPSTimestamp',['../d0/d3e/pps-files_8cpp.html#a07ec803a42c0d7933b1709071f0a3182',1,'pps-files.cpp']]],
+  ['readstate_237',['readState',['../d5/d60/pps-client_8cpp.html#af5f05a0264c041c178fc78d1c695224b',1,'pps-client.cpp']]],
+  ['recordfrequencyvars_238',['recordFrequencyVars',['../d0/d3e/pps-files_8cpp.html#a88ffb32d9158209276d4cc73132ee76e',1,'pps-files.cpp']]],
+  ['recordoffsets_239',['recordOffsets',['../d0/d3e/pps-files_8cpp.html#a844fdb2cde0cee3651ece4170fbeb59a',1,'pps-files.cpp']]],
+  ['removeconfigkeys_240',['removeConfigKeys',['../d0/d3e/pps-files_8cpp.html#a7d3637bb8a063c7565648288f2c95432',1,'pps-files.cpp']]],
+  ['removenoise_241',['removeNoise',['../d5/d60/pps-client_8cpp.html#ad71923ccec11a6d6e132c43e60fe8765',1,'pps-client.cpp']]],
+  ['rundir_242',['RUNDIR',['../d4/d6a/pps-client_8h.html#ab2064512b9c307b1cf472a3d43c124d0',1,'pps-client.h']]],
+  ['rv_243',['rv',['../d1/d78/structtime_check_params.html#a33bd676b5c993b47d5010b636792aa54',1,'timeCheckParams']]]
+];
