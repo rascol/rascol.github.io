@@ -1,7 +1,6 @@
 <map id="getNISTTime" name="getNISTTime">
-<area shape="rect" id="node1" title=" " alt="" coords="5,81,105,108"/>
-<area shape="rect" id="node2" href="$dc/d4f/pps-sntp_8cpp.html#a8043d13f1150e0583d390c8eb5e07848" title=" " alt="" coords="185,5,272,32"/>
-<area shape="rect" id="node3" href="$d5/d60/pps-client_8cpp.html#aaf2d0a99430a6d5253b8c395c30ca7e3" title=" " alt="" coords="180,56,277,83"/>
-<area shape="rect" id="node4" href="$d0/d3e/pps-files_8cpp.html#a19da05b45d1e94170f5fe86decb70bfb" title=" " alt="" coords="177,107,280,133"/>
-<area shape="rect" id="node5" href="$d0/d3e/pps-files_8cpp.html#a5e4671d51ee126315cb694ef235d359a" title=" " alt="" coords="153,157,304,184"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,56,112,83"/>
+<area shape="rect" id="node2" href="$dc/d4f/pps-sntp_8cpp.html#a8043d13f1150e0583d390c8eb5e07848" title=" " alt="" coords="196,5,287,32"/>
+<area shape="rect" id="node3" href="$d0/d3e/pps-files_8cpp.html#a19da05b45d1e94170f5fe86decb70bfb" title=" " alt="" coords="186,56,297,83"/>
+<area shape="rect" id="node4" href="$d0/d3e/pps-files_8cpp.html#a5e4671d51ee126315cb694ef235d359a" title=" " alt="" coords="160,107,323,133"/>
 </map>
